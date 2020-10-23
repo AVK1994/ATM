@@ -16,7 +16,7 @@ public class ATM {
 
     private int takeCash(int cash) {
         if (atmCash < cash) {
-            cash = 0;
+            return atmCash;
         }
         atmCash = atmCash - cash;
         return atmCash;
